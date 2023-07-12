@@ -23,12 +23,11 @@ const TodoList = () => {
         window.location.reload()
     }
     const updateListArray = (odj, index) => {
-        const updateListArray = (odj, index) => {
-            let tempList = taskList
-            tempList[index] =odj;
-            localStorage.setItem("taskList", JSON.stringify(tempList))
-            setTaskList(tempList)
-            window.location.reload()    }
+        let tempList = taskList
+        tempList[index] =odj;
+        localStorage.setItem("taskList", JSON.stringify(tempList))
+        setTaskList(tempList)
+        window.location.reload() 
     
     }
 

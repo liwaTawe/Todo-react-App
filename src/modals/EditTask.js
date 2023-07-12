@@ -21,6 +21,7 @@ const EditTaskPopup = ({modal, toggle, updateTask, taskObj}) => {
         setDescription(taskObj.Description) 
     },[])
 
+
     const handleUpdate = (e) => {
         e.preventDefault();
         let tempObj = {}
@@ -30,7 +31,7 @@ const EditTaskPopup = ({modal, toggle, updateTask, taskObj}) => {
     }
     return (
         <Modal isOpen={modal} toggle={toggle}>
-            <ModalHeader toggle={toggle}>Update Task</ModalHeader>
+            <ModalHeader toggle={toggle}>Modifier une tache </ModalHeader>
             <ModalBody>
                <form>
                     <div className="form-group">
@@ -46,8 +47,8 @@ const EditTaskPopup = ({modal, toggle, updateTask, taskObj}) => {
                </form>
             </ModalBody>
             <ModalFooter>
-            <Button color="primary" onClick={handleUpdate}>update</Button>{' '}
-            <Button color="secondary" onClick={toggle}>Cancel</Button>
+            <Button color="primary" onClick={handleUpdate}>Modifier</Button>{' '}
+            <Button color="secondary" onClick={toggle}>Supprimer</Button>
              </ModalFooter>
       </Modal>
     );

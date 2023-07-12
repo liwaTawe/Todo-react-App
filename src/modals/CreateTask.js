@@ -24,7 +24,7 @@ const CreateTaskPopup = ({modal, toggle, save}) => {
     }
     return (
         <Modal isOpen={modal} toggle={toggle}>
-            <ModalHeader toggle={toggle}>Create Task</ModalHeader>
+            <ModalHeader toggle={toggle}>Créer une tâche</ModalHeader>
             <ModalBody>
                <form>
                     <div className="form-group">
@@ -40,8 +40,8 @@ const CreateTaskPopup = ({modal, toggle, save}) => {
                </form>
             </ModalBody>
             <ModalFooter>
-            <Button color="primary" onClick={handleSave}>Create</Button>{' '}
-            <Button color="secondary" onClick={toggle}>Cancel</Button>
+            <Button color="primary" onClick={handleSave}>créer</Button>{' '}
+            <Button color="secondary" onClick={toggle}>Supprimer</Button>
              </ModalFooter>
       </Modal>
     );
